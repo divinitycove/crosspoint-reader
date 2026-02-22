@@ -10,9 +10,9 @@ Welcome to the **CrossPoint** firmware. This guide outlines the hardware control
     - [First Launch](#first-launch)
   - [3. Screens](#3-screens)
     - [3.1 Home Screen](#31-home-screen)
-    - [3.2 Book Selection](#32-book-selection)
+    - [3.2 Browse Files Screen](#32-browse-files-screen)
     - [3.3 Reading Mode](#33-reading-mode)
-    - [3.4 File Upload Screen](#34-file-upload-screen)
+    - [3.4 File Transfer Screen](#34-file-transfer-screen)
     - [3.4.1 Calibre Wireless Transfers](#341-calibre-wireless-transfers)
     - [3.5 Settings](#35-settings)
     - [3.6 Sleep Screen](#36-sleep-screen)
@@ -67,11 +67,11 @@ Upon turning the device on for the first time, you will be placed on the **[Home
 
 ### 3.1 Home Screen
 
-The Home Screen is the main entry point to the firmware. From here you can navigate to **[Reading Mode](#4-reading-mode)** with the most recently read book, the **[Browse Files](#32-browse-files)** screen, the **[File Transfer](#34-file-upload-screen)** screen, or the **[Settings](#35-settings)** screen.
+The Home Screen is the main entry point to the firmware. From here you can navigate to **[Reading Mode](#4-reading-mode)** with the most recently read book, the **[Browse Files](#32-browse-files-screen)** screen, the **[File Transfer](#34-file-upload-screen)** screen, or **[Settings](#35-settings)**.
 
-### 3.2 Browse Files
+### 3.2 Browse Files Screen
 
-The Browse Files screen acts as a folder and file browser.
+The Browse Files screen acts as a file and folder browser.
 
 * **Navigate List:** Use **Left** (or **Volume Up**), or **Right** (or **Volume Down**) to move the selection cursor up and down through folders and books. You can also long-press these buttons to scroll a full page up or down.
 * **Open Selection:** Press **Confirm** to open a folder or read a selected book.
@@ -104,6 +104,9 @@ CrossPoint supports sending books from Calibre using the CrossPoint Reader devic
 ### 3.5 Settings
 
 The Settings screen allows you to configure the device's behavior. There are a few settings you can adjust:
+
+#### 3.5.1 Display
+
 - **Sleep Screen**: Which sleep screen to display when the device sleeps:
   - "Dark" (default) - The default dark Crosspoint logo sleep screen
   - "Light" - The same default sleep screen, on a white background
@@ -129,47 +132,63 @@ The Settings screen allows you to configure the device's behavior. There are a f
   - "Never" - Always show battery percentage (default)
   - "In Reader" - Show battery percentage everywhere except in reading mode
   - "Always" - Always hide battery percentage
-- **Refresh Frequency**: Set how often the screen does a full refresh while reading to reduce ghosting.
-- **UI Theme**:
-  - "Lyra" - 
-  - "Lyra Extended" - 
-  - "Classic" - 
+- **Refresh Frequency**: Set how often the screen does a full refresh while reading to reduce ghosting ("1 page", "5 pages", "10 pages", "15 pages", and "30 pages")
 
+- **UI Theme**: Set the UI theme.
+  - "Lyra" - The new, in-development theme for Crosspoint
+  - "Lyra Extended" - Lyra, but displays 3 books instead of 1 on the **[Home Screen](#31-home-screen)**
+  - "Classic" - The original theme for Crosspoint
 - **Sunlight Fading Fix**: Configure whether to enable a software-fix for the issue where white X4 models may fade when used in direct sunlight
   - "OFF" (default) - Disable the fix
   - "ON" - Enable the fix
-- **Extra Paragraph Spacing**: If enabled, vertical space will be added between paragraphs in the book. If disabled, paragraphs will not have vertical space between them, but will have first-line indentation.
-- **Text Anti-Aliasing**: Whether to show smooth grey edges (anti-aliasing) on text in reading mode. Note this slows down page turns slightly.
-- **Short Power Button Click**: Controls the effect of a short click of the power button:
-  - "Ignore" - Require a long press to turn off the device
-  - "Sleep" - A short press powers the device off
-  - "Page Turn" - A short press in reading mode turns to the next page; a long press turns the device off
+
+#### 3.5.2 Reader
+- **Reader Font Family**: Choose the font used for reading:
+  - "Bookerly" (default) - Amazon's reading font
+  - "Noto Sans" - Google's sans-serif font
+  - "Open Dyslexic" - Font designed for readers with dyslexia
+- **UI Font Size**: Adjust the text size for reading; options are "Small", "Medium", "Large", or "X Large".
+
+- **Reader Line Spacing**: Adjust the spacing between lines; options are "Tight", "Normal", or "Wide".
+- **Reader Screen Margin**: Controls the screen margins in reader mode between 5 and 40 pixels in 5 pixel increments.
+- **Reader Paragraph Alignment**: Set the alignment of paragraphs; options are "Justified" (default), "Left", "Center", or "Right".
+- **Embedded Style**: Whether to use embedded EPUB stylisation.
+- **Hyphenation**: Whether to hyphenate text at the end of lines in Reading Mode.
 - **Reading Orientation**: Set the screen orientation for reading EPUB files:
   - "Portrait" (default) - Standard portrait orientation
   - "Landscape CW" - Landscape, rotated clockwise
   - "Inverted" - Portrait, upside down
   - "Landscape CCW" - Landscape, rotated counter-clockwise
-- **Front Button Layout**: Configure the order of the bottom edge buttons:
+- **Extra Paragraph Spacing**: If enabled, vertical space will be added between paragraphs in the book. If disabled, paragraphs will not have vertical space between them, but will have first-line indentation.
+- **Text Anti-Aliasing**: Whether to show smooth grey edges (anti-aliasing) on text in reading mode. Note this slows down page turns slightly.
+
+#### 3.5.3 Controls
+
+- **Remap Front Buttons**: Configure the order of the bottom edge buttons:
   - Back, Confirm, Left, Right (default)
   - Left, Right, Back, Confirm
   - Left, Back, Confirm, Right
   - Back, Confirm, Right, Left
-- **Side Button Layout (reader)**: Swap the order of the up and down volume buttons from Previous/Next to Next/Previous. This change is only in effect when reading.
-- **Long-press Chapter Skip**: Set whether long-pressing page turn buttons skip to the next/previous chapter.
+- **Side Button Layout (reader)**: Swap the order of the up and down volume buttons from Prev/Next to Next/Prev. This change is only in effect when reading.
+
+- **Long-press Chapter Skip**: Set whether long-pressing page turn buttons skips to the next/previous chapter.
   - "Chapter Skip" (default) - Long-pressing skips to next/previous chapter
   - "Page Scroll" - Long-pressing scrolls a page up/down
-- Swap the order of the up and down volume buttons from Previous/Next to Next/Previous. This change is only in effect when reading.
-- **Reader Font Family**: Choose the font used for reading:
-  - "Bookerly" (default) - Amazon's reading font
-  - "Noto Sans" - Google's sans-serif font
-  - "Open Dyslexic" - Font designed for readers with dyslexia
-- **Reader Font Size**: Adjust the text size for reading; options are "Small", "Medium", "Large", or "X Large".
-- **Reader Line Spacing**: Adjust the spacing between lines; options are "Tight", "Normal", or "Wide".
-- **Reader Screen Margin**: Controls the screen margins in reader mode between 5 and 40 pixels in 5 pixel increments.
-- **Reader Paragraph Alignment**: Set the alignment of paragraphs; options are "Justified" (default), "Left", "Center", or "Right".
-- **Time to Sleep**: Set the duration of inactivity before the device automatically goes to sleep.
+- **Short Power Button Click**: Controls the effect of a short click of the power button:
+  - "Ignore" - Require a long press to turn off the device
+  - "Sleep" - A short press powers the device off
+  - "Page Turn" - A short press in reading mode turns to the next page; a long press turns the device off
+
+#### 3.5.4 System
+
+- **Time to Sleep**: Set the duration of inactivity before the device automatically goes to sleep ("1 min", "5 min", "10 min, "15 min", and "30 min").
+
+- **WiFi Networks**: Connect to WiFi networks for file transfers and firmware updates.
+- **KOReader Sync**: Options for setting up KOReader for syncing book progress.
 - **OPDS Browser**: Configure OPDS server settings for browsing and downloading books. Set the server URL (for Calibre Content Server, add `/opds` to the end), and optionally configure username and password for servers requiring authentication. Note: Only HTTP Basic authentication is supported. If using Calibre Content Server with authentication enabled, you must set it to use Basic authentication instead of the default Digest authentication.
+- **Clear Reading Cache**: Clears the internal cache.
 - **Check for updates**: Check for firmware updates over WiFi.
+- **Language**: Set the system language (see **[Supported Languages](#supported-languages)**).
 
 ### 3.6 Sleep Screen
 
@@ -210,8 +229,8 @@ This feature can be disabled in **[Settings](#35-settings)** to help avoid chang
 
 
 ### System Navigation
-* **Return to Book Selection:** Press **Back** to close the book and return to the **[Book Selection](#32-book-selection)** screen.
-* **Return to Home:** Press and **hold** the **Back** button to close the book and return to the **[Home](#31-home-screen)** screen.
+* **Return to Home:** Press the **Back** button to close the book and return to the **[Home](#31-home-screen)** screen.
+* **Return to Browse Files:** Press and hold **Back** to close the book and return to the **[Browse Files](#32-browse-files-screen)** screen.
 * **Chapter Menu:** Press **Confirm** to open the **[Table of Contents/Chapter Selection](#5-chapter-selection-screen)**.
 
 ### Supported Languages
