@@ -67,7 +67,7 @@ Upon turning the device on for the first time, you will be placed on the **[Home
 
 ### 3.1 Home Screen
 
-The Home Screen is the main entry point to the firmware. From here you can navigate to **[Reading Mode](#4-reading-mode)** with the most recently read book, the **[Browse Files](#32-browse-files-screen)** screen, the **[File Transfer](#34-file-upload-screen)** screen, or **[Settings](#35-settings)**.
+The Home Screen is the main entry point to the firmware. From here you can navigate to **[Reading Mode](#4-reading-mode)** with the most recently read book, the **[Browse Files](#32-browse-files-screen)** screen, the **[File Transfer](#34-file-transfer-screen)** screen, or **[Settings](#35-settings)**.
 
 ### 3.2 Browse Files Screen
 
