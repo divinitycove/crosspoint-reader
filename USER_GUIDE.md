@@ -126,7 +126,7 @@ The Settings screen allows you to configure the device's behavior. There are a f
 - **Sleep Screen Cover Mode**: How to display the book cover when "Cover" sleep screen is selected:
   - "Fit" (default) - Scale the image down to fit centered on the screen, padding with white borders as necessary
   - "Crop" - Scale the image down and crop as necessary to try to fill the screen (Note: this is experimental and may not work as expected)
-- **Sleep Screen Cover Filter**: What filter will be applied to the book cover when "Cover" sleep screen is selected 
+- **Sleep Screen Cover Filter**: What filter will be applied to the book cover when "Cover" sleep screen is selected:
   - "None" (default) - The cover image will be converted to a grayscale image and displayed as it is
   - "Contrast" - The image will be displayed as a black & white image without grayscale conversion
   - "Inverted" - The image will be inverted as in white & black and will be displayed without grayscale conversion
@@ -138,16 +138,16 @@ The Settings screen allows you to configure the device's behavior. There are a f
   - "Book Bar Only" - Show book progress (as bar)
   - "Full w/ Chapter Bar" - Show status bar with chapter progress (as bar)
 - **Hide Battery %**: Configure where to suppress the battery percentage display in the status bar; the battery icon will still be shown:
-  - "Never" - Always show battery percentage (default)
+  - "Never" (default) - Always show battery percentage
   - "In Reader" - Show battery percentage everywhere except in reading mode
   - "Always" - Always hide battery percentage
-- **Refresh Frequency**: Set how often the screen does a full refresh while reading to reduce ghosting ("1 page", "5 pages", "10 pages", "15 pages", and "30 pages")
+- **Refresh Frequency**: Set how often the screen does a full refresh while reading to reduce ghosting; options are every 1, 5, 10, 15, or 30 pages.
 
-- **UI Theme**: Set the UI theme.
-  - "Lyra" - The new, in-development theme for Crosspoint
+- **UI Theme**: Set which UI theme to use:
+  - "Classic" - The original Crosspoint theme
+  - "Lyra" - The new theme for Crosspoint featuring rounded elements and menu icons
   - "Lyra Extended" - Lyra, but displays 3 books instead of 1 on the **[Home Screen](#31-home-screen)**
-  - "Classic" - The original theme for Crosspoint
-- **Sunlight Fading Fix**: Configure whether to enable a software-fix for the issue where white X4 models may fade when used in direct sunlight
+- **Sunlight Fading Fix**: Configure whether to enable a software-fix for the issue where white X4 models may fade when used in direct sunlight:
   - "OFF" (default) - Disable the fix
   - "ON" - Enable the fix
 
@@ -158,11 +158,11 @@ The Settings screen allows you to configure the device's behavior. There are a f
   - "Open Dyslexic" - Font designed for readers with dyslexia
 - **UI Font Size**: Adjust the text size for reading; options are "Small", "Medium", "Large", or "X Large".
 
-- **Reader Line Spacing**: Adjust the spacing between lines; options are "Tight", "Normal", or "Wide".
+- **Reader Line Spacing**: Adjust the spacing between lines; options are "Tight", "Normal" (default), or "Wide".
 - **Reader Screen Margin**: Controls the screen margins in reader mode between 5 and 40 pixels in 5-pixel increments.
 - **Reader Paragraph Alignment**: Set the alignment of paragraphs; options are "Justified" (default), "Left", "Center", or "Right".
-- **Embedded Style**: Whether to use embedded EPUB stylisation.
-- **Hyphenation**: Whether to hyphenate text at the end of lines in Reading Mode.
+- **Embedded Style**: Whether to use embedded EPUB stylisation and formatting.
+- **Hyphenation**: Whether to hyphenate text in Reading Mode.
 - **Reading Orientation**: Set the screen orientation for reading EPUB files:
   - "Portrait" (default) - Standard portrait orientation
   - "Landscape CW" - Landscape, rotated clockwise
@@ -173,14 +173,10 @@ The Settings screen allows you to configure the device's behavior. There are a f
 
 #### 3.6.3 Controls
 
-- **Remap Front Buttons**: Configure the order of the bottom edge buttons:
-  - Back, Confirm, Left, Right (default)
-  - Left, Right, Back, Confirm
-  - Left, Back, Confirm, Right
-  - Back, Confirm, Right, Left
+- **Remap Front Buttons**: A menu for customising the function of each bottom edge button.
 - **Side Button Layout (reader)**: Swap the order of the up and down volume buttons from Prev/Next to Next/Prev. This change is only in effect when reading.
 
-- **Long-press Chapter Skip**: Set whether long-pressing page turn buttons skips to the next/previous chapter.
+- **Long-press Chapter Skip**: Set whether long-pressing page turn buttons skips to the next/previous chapter:
   - "Chapter Skip" (default) - Long-pressing skips to next/previous chapter
   - "Page Scroll" - Long-pressing scrolls a page up/down
 - **Short Power Button Click**: Controls the effect of a short click of the power button:
@@ -190,14 +186,14 @@ The Settings screen allows you to configure the device's behavior. There are a f
 
 #### 3.6.4 System
 
-- **Time to Sleep**: Set the duration of inactivity before the device automatically goes to sleep ("1 min", "5 min", "10 min", "15 min", and "30 min").
+- **Time to Sleep**: Set the duration of inactivity before the device automatically goes to sleep; options are 1, 5, 10, 15 or 30 minutes.
 
 - **WiFi Networks**: Connect to WiFi networks for file transfers and firmware updates.
 - **KOReader Sync**: Options for setting up KOReader for syncing book progress.
 - **OPDS Browser**: Configure OPDS server settings for browsing and downloading books. Set the server URL (for Calibre Content Server, add `/opds` to the end), and optionally configure username and password for servers requiring authentication. Note: Only HTTP Basic authentication is supported. If using Calibre Content Server with authentication enabled, you must set it to use Basic authentication instead of the default Digest authentication.
-- **Clear Reading Cache**: Clears the internal cache.
-- **Check for updates**: Check for firmware updates over WiFi.
-- **Language**: Set the system language (see **[Supported Languages](#supported-languages)**).
+- **Clear Reading Cache**: Clear the internal SD card cache.
+- **Check for updates**: Check for Crosspoint firmware updates over WiFi.
+- **Language**: Set the system language (see **[Supported Languages](#supported-languages)** for more informaiton).
 
 ### 3.7 Sleep Screen
 
