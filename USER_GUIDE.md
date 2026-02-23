@@ -12,14 +12,15 @@ Welcome to the **CrossPoint** firmware. This guide outlines the hardware control
     - [3.1 Home Screen](#31-home-screen)
     - [3.2 Browse Files Screen](#32-browse-files-screen)
     - [3.3 Reading Mode](#33-reading-mode)
-    - [3.4 File Transfer Screen](#34-file-transfer-screen)
-    - [3.4.1 Calibre Wireless Transfers](#341-calibre-wireless-transfers)
-    - [3.5 Settings](#35-settings)
-      - [3.5.1 Display](#351-display)
-      - [3.5.2 Reader](#352-reader)
-      - [3.5.3 Controls](#353-controls)
-      - [3.5.4 System](#354-system)
-    - [3.6 Sleep Screen](#36-sleep-screen)
+    - [3.4 Recent Books Screen](#34-recent-books-screen)
+    - [3.5 File Transfer Screen](#35-file-transfer-screen)
+      - [3.5.1 Calibre Wireless Transfers](#351-calibre-wireless-transfers)
+    - [3.6 Settings](#36-settings)
+      - [3.6.1 Display](#361-display)
+      - [3.6.2 Reader](#362-reader)
+      - [3.6.3 Controls](#363-controls)
+      - [3.6.4 System](#364-system)
+    - [3.7 Sleep Screen](#37-sleep-screen)
   - [4. Reading Mode](#4-reading-mode)
     - [Page Turning](#page-turning)
     - [Chapter Navigation](#chapter-navigation)
@@ -40,7 +41,7 @@ The device utilises the standard buttons on the Xteink X4 (in the same layout as
 | **Bottom Edge** | **Back**, **Confirm**, **Left**, **Right**           |
 | **Right Side**  | **Power**, **Volume Up**, **Volume Down**, **Reset** |
 
-Button layout can be customized in **[Settings](#35-settings)**.
+Button layout can be customized in **[Settings](#36-settings)**.
 
 ### Taking a Screenshot
 When the Power Button and Volume Down button are pressed at the same time, it will take a screenshot and save it in the folder `screenshots/`.
@@ -54,7 +55,7 @@ Alternatively, while reading a book, press the **Confirm** button to open the re
 ### Power On / Off
 
 To turn the device on or off, **press and hold the Power button for approximately half a second**.
-In **[Settings](#35-settings)** you can configure the power button to turn the device off with a short press instead of a long one.
+In **[Settings](#36-settings)** you can configure the power button to turn the device off with a short press instead of a long one.
 
 To reboot the device (for example after a firmware update or if it's frozen), press and release the Reset button, and then quickly press and hold the Power button for a few seconds.
 
@@ -71,7 +72,7 @@ Upon turning the device on for the first time, you will be placed on the **[Home
 
 ### 3.1 Home Screen
 
-The Home Screen is the main entry point to the firmware. From here you can navigate to **[Reading Mode](#4-reading-mode)** with the most recently read book, the **[Browse Files](#32-browse-files-screen)** screen, the **[File Transfer](#34-file-transfer-screen)** screen, or **[Settings](#35-settings)**.
+The Home Screen is the main entry point to the firmware. From here you can navigate to **[Reading Mode](#4-reading-mode)** with the most recently read book, the **[Browse Files](#32-browse-files-screen)** screen, the **[File Transfer](#35-file-transfer-screen)** screen, or **[Settings](#36-settings)**.
 
 ### 3.2 Browse Files Screen
 
@@ -84,7 +85,11 @@ The Browse Files screen acts as a file and folder browser.
 
 See [Reading Mode](#4-reading-mode) below for more information.
 
-### 3.4 File Transfer Screen
+### 3.4 Recent Books Screen
+
+The Recent Books screen lists the most recently opened books in a chronological view, displaying title and author.
+
+### 3.5 File Transfer Screen
 
 The File Transfer screen allows you to upload new e-books to the device. When you enter the screen, you'll be prompted with a WiFi selection dialog and then your X4 will start hosting a web server.
 
@@ -93,7 +98,7 @@ See the [webserver docs](./docs/webserver.md) for more information on how to con
 > [!TIP]
 > Advanced users can also manage files programmatically or via the command line using `curl`. See the [webserver docs](./docs/webserver.md) for details.
 
-### 3.4.1 Calibre Wireless Transfers
+### 3.5.1 Calibre Wireless Transfers
 
 CrossPoint supports sending books from Calibre using the CrossPoint Reader device plugin.
 
@@ -105,16 +110,16 @@ CrossPoint supports sending books from Calibre using the CrossPoint Reader devic
 3. Make sure your computer is on the same WiFi network.
 4. In Calibre, click "Send to device" to transfer books.
 
-### 3.5 Settings
+### 3.6 Settings
 
 The Settings screen allows you to configure the device's behavior. There are a few settings you can adjust:
 
-#### 3.5.1 Display
+#### 3.6.1 Display
 
 - **Sleep Screen**: Which sleep screen to display when the device sleeps:
   - "Dark" (default) - The default dark Crosspoint logo sleep screen
   - "Light" - The same default sleep screen, on a white background
-  - "Custom" - Custom images from the SD card; see [Sleep Screen](#36-sleep-screen) below for more information
+  - "Custom" - Custom images from the SD card; see [Sleep Screen](#37-sleep-screen) below for more information
   - "Cover" - The book cover image (Note: this is experimental and may not work as expected)
   - "None" - A blank screen
   - "Cover + Custom" - The book cover image, falls back to "Custom" behavior
@@ -146,7 +151,7 @@ The Settings screen allows you to configure the device's behavior. There are a f
   - "OFF" (default) - Disable the fix
   - "ON" - Enable the fix
 
-#### 3.5.2 Reader
+#### 3.6.2 Reader
 - **Reader Font Family**: Choose the font used for reading:
   - "Bookerly" (default) - Amazon's reading font
   - "Noto Sans" - Google's sans-serif font
@@ -166,7 +171,7 @@ The Settings screen allows you to configure the device's behavior. There are a f
 - **Extra Paragraph Spacing**: If enabled, vertical space will be added between paragraphs in the book. If disabled, paragraphs will not have vertical space between them, but will have first-line indentation.
 - **Text Anti-Aliasing**: Whether to show smooth grey edges (anti-aliasing) on text in reading mode. Note this slows down page turns slightly.
 
-#### 3.5.3 Controls
+#### 3.6.3 Controls
 
 - **Remap Front Buttons**: Configure the order of the bottom edge buttons:
   - Back, Confirm, Left, Right (default)
@@ -183,7 +188,7 @@ The Settings screen allows you to configure the device's behavior. There are a f
   - "Sleep" - A short press puts the device into sleep mode
   - "Page Turn" - A short press in reading mode turns to the next page; a long press turns the device off
 
-#### 3.5.4 System
+#### 3.6.4 System
 
 - **Time to Sleep**: Set the duration of inactivity before the device automatically goes to sleep ("1 min", "5 min", "10 min", "15 min", and "30 min").
 
@@ -194,7 +199,7 @@ The Settings screen allows you to configure the device's behavior. There are a f
 - **Check for updates**: Check for firmware updates over WiFi.
 - **Language**: Set the system language (see **[Supported Languages](#supported-languages)**).
 
-### 3.6 Sleep Screen
+### 3.7 Sleep Screen
 
 You can customize the sleep screen by placing custom images in specific locations on the SD card:
 
@@ -221,7 +226,7 @@ Once you have opened a book, the button layout changes to facilitate reading.
 | **Previous Page** | Press **Left** _or_ **Volume Up**    |
 | **Next Page**     | Press **Right** _or_ **Volume Down** |
 
-The role of the volume (side) buttons can be swapped in **[Settings](#35-settings)**.
+The role of the volume (side) buttons can be swapped in **[Settings](#36-settings)**.
 
 If the **Short Power Button Click** setting is set to "Page Turn", you can also turn to the next page by briefly pressing the Power button.
 
@@ -229,7 +234,7 @@ If the **Short Power Button Click** setting is set to "Page Turn", you can also 
 * **Next Chapter:** Press and **hold** the **Right** (or **Volume Down**) button briefly, then release.
 * **Previous Chapter:** Press and **hold** the **Left** (or **Volume Up**) button briefly, then release.
 
-This feature can be disabled in **[Settings](#35-settings)** to help avoid changing chapters by mistake.
+This feature can be disabled in **[Settings](#36-settings)** to help avoid changing chapters by mistake.
 
 
 ### System Navigation
