@@ -57,7 +57,7 @@ Alternatively, while reading a book, press the **Confirm** button to open the re
 To turn the device on or off, **press and hold the Power button for approximately half a second**.
 In the **[Controls Settings](#363-controls)** you can configure the power button to turn the device off with a short press instead of a long one.
 
-To reboot the device (for example after a firmware update or if it's frozen), press and release the Reset button, and then quickly press and hold the Power button for a few seconds.
+To reboot the device (for example after a firmware update or if it's frozen), press and release the Reset button, and then quickly press and hold the Power button for a few seconds (see also **[Troubleshooting Issues & Escaping Bootloop](#7-troubleshooting-issues--escaping-bootloop)**).
 
 ### First Launch
 
